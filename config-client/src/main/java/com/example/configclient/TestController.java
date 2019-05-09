@@ -10,11 +10,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 @RestController
 public class TestController {
-    @Value("${test-key}")
+    @Value("${test-key:test-key}")
     private String testKey;
+
+    @Value("${testKey2}")
+    private String testKey2;
 
     @RequestMapping("/testKey")
     public String testKey() {
         return testKey;
+    }
+
+    @RequestMapping("/testKey2")
+    public String testKey2() {
+        return testKey2;
     }
 }

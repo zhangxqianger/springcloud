@@ -5,12 +5,13 @@ spring:
     config:
       server:
         git:
-          uri: file://home/zxq/project/cloud/config-file
-
+          uri: https://github.com/zhangxqianger/config-file
+          username: zhangxqianger@vip.qq.com
+          password: 13053187a
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:18000/eureka
 
 server:
-  port: 19000
+  port: 19001
