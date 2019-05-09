@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://home/zxq/project/cloud/config-file
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:18000/eureka
+
+server:
+  port: 19000

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://localhost:19000/
+      profile: default
+      label: master
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:18000/eureka
+
+server:
+  port: 9004
