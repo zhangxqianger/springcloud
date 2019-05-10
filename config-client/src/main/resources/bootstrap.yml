@@ -10,6 +10,7 @@ spring:
       discovery:
         enabled: true
         service-id: CONFIG-SERVICE
+
   rabbitmq:
     username: user
     password: password

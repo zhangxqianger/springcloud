@@ -6,8 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/zhangxqianger/config-file
-          username: zhangxqianger@vip.qq.com
-          password: 13053187a
+
 eureka:
   client:
     service-url:
